@@ -1,0 +1,41 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.category-table {
+    margin-top: 20px;
+}
+
+.table-container {
+    margin-bottom: 20px;
+}
+
+.modal-body {
+    font-size: 16px;
+}
+
+.modal-body h6 {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.orientation-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Ensure it covers the entire screen */
+    text-align: center;
+    padding: 20px;
+}
