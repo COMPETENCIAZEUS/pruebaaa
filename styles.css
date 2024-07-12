@@ -1,41 +1,109 @@
 body {
-    background-color: #f8f9fa;
-}
-
-.category-table {
-    margin-top: 20px;
-}
-
-.table-container {
-    margin-bottom: 20px;
-}
-
-.modal-body {
-    font-size: 16px;
-}
-
-.modal-body h6 {
-    font-weight: bold;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.orientation-message {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    font-size: 24px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1050; /* Ensure it covers the entire screen */
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin-top: 20px;
     text-align: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.last-update {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.score-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.score-table th, .score-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.score-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.score-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.score-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos para la mini pestaña emergente */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
     padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
